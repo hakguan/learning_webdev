@@ -1,12 +1,41 @@
 <!DOCTYPE html>
+<html> <!--해당 문서의 해당 부분이 html문서라는 것을 의미-->
+    <head> <!--문서의 속성을 지정하는 태그-->
+        <title>MY First Website</title>
+        <meta charset="utf-8"> <!--한글을 지원하는 대표적인 인코딩 방식-->
+        <style>
+            h1 {
+                font-size: 64px;
+                text-align: center;
+                color: blue;
+            }
+            
+            h3 { 
+                margin-top: 100px;
+                /* margin은 top,bottom, left, right에 적용될 수 있음 */
+                color: hotpink;
+            }
+            
+            p i { /* <p> 태그 안에 있는 <i> 태그에 적용한다는 의미*/ 
+                font-size: 48px;
+            }
+            
+            h2 i {
+                color: lime;
+            }
+            </style>
+    </head>
 
-<title>MY First Website</title>
+    <body> <!--문서의 내용(실제 웹에서 보이는 부분)-->
+        <h1>My First Page</h1>
+        <h2>I <i>Love</i> HTML!</h2>
+        <h3>안녕 세상!</h3>
 
-<h1>My First Page</h1>
-<h2>I Love HTML!</h2>
-<h3>h3 tag</h3>
-<h4>h4 tag</h4>
-<h5>h5 tag</h5>
-<h6>h6 tag</h6>
+        <h3>h3 tag</h3>
+        <h4>h4 tag</h4>
+        <h5>h5 tag</h5>
+        <h6>h6 tag</h6>
 
-<p>This is pahagraph</p>
+        <p>Lorem ipsum <b>dolor</b> sitamet, consectetur adipiscing elit, sed do eiusmod <i>tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+    </body>
+</html>
