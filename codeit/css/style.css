@@ -1,0 +1,8 @@
+/*
+웹페이지를 개발할 때 css파일을 따로 만들어서 개발하는 것이 좋음
+html파일에서 css 파일은 link 태그를 활용해서 연결해줌
+(예시)
+<link herf="css/styles.css" rel="sytlesheet">
+*/
+
+
