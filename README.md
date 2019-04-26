@@ -62,3 +62,30 @@ These are what I learned, not for teaching
         ```html
         <h1 style="color: red; font-size: 72px;">Heading 1</h1>
         ```
+- color를 표현하는 방법
+    1. 색 이름
+    2. rgb 값
+    3. hex
+    ```Html
+    <!--예시(순서대로 표기방법)-->
+    <style>
+        h1 {
+            color: blue;
+            color: rgb(34, 50, 90);
+            color: #61F96B;
+        }
+    </style>
+    ```
+- text에 적용할 수 있는 텍스트 스타일링 속성
+    ```Css
+    h1 {
+        font-size: 32px;
+        font-weight: 700; 
+    /*- 굵기를 표현하는 속성으로 100~900 사이의 값을 가짐(100단위)
+    - 브라우저마다 지원하는 값이 다를 수 있음*/
+        text-align: left;
+    /*left, center, right*/
+        text-decoration: unterline;
+    /*none, underline, overline, line-through*/
+    }
+    ```
