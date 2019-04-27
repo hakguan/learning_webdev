@@ -5,4 +5,35 @@ html파일에서 css 파일은 link 태그를 활용해서 연결해줌
 <link herf="css/styles.css" rel="sytlesheet">
 */
 
+#serif {
+    font-family: serif;
+}
 
+#sans-serif {
+    font-family: sans-serif;
+}
+
+#monospace {
+    font-family: monospace;
+}
+
+#cursive {
+    font-family: cursive;
+}
+
+#fantasy {
+    font-family: fantasy;
+}
+
+#google {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+@font-face {
+    src: url("../fonts/BMHANNAPro.ttf");
+    font-family: "Hanna";
+}
+
+p {
+    font-family: "Hanna";
+}

@@ -89,3 +89,53 @@ These are what I learned, not for teaching
     /*none, underline, overline, line-through*/
     }
     ```
+- 텍스트 font 크기
+    1. 절대적크기(absolute) : px, pt
+        - pt는 px의 1.33배 (워드 프로그램 등에서 사용, 웹에서 잘 사용하지는 않음)
+    2. 상대적크기(relative) : em, %
+        - 1em은 100%와 같음
+        - %의 경우 부모 요소의 폰트 크기를 기준으로 함(바로 상위의 부모 요소)
+- 폰트 설정 방법
+    1. 사용자 컴퓨터에 설치되어 있는 폰트 사용
+       - 폰트의 유형 : serif, sans-serif, monospace, cursive, fantasy
+       ```Html
+       <style>
+           h1 {
+               /*폰트에 띄어쓰기가 있는 경우 "" 안에 넣어줘야 함*/
+               font-family: "Times New Roman", Times, serif;
+               /*--브라우저에서 위의 순서대로 폰트를 찾아서 사용하도록 함(사용자의 컴퓨터에 설치되어 있지 않은경우 다음 안으로 넘어감*/
+           }
+       </style>
+       ```
+    2. 웹폰트 사용
+        - [Google 폰트 사용](https://fonts.google.com)
+        ```Html
+        <head>
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
+        </head>
+        <style>
+            h1 {
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            h2 {
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+        </style>
+        ```
+        - [Google 폰트 earlt access](https://fonts.google.com/earlyaccess)
+            - Korean을 검색해서 한글 지원 폰트 사용 가능(정식버전에서도 한글을 지원하는 폰트 찾을 수 있음)
+    3. 파일로 제공되는 폰트 사용
+        - 폰트 파일을 프로젝트 폴더 내에 넣고 경로 지정
+        ```Css
+        @font-face {
+            src: url("../fonts/BMHANNAPro.ttf");
+            font-family: "Hanna";
+        }
+
+        p {
+            font-family: "Hanna";
+        }
+        ```
+- 구역을 구분하는 태그 : <div>, <span>
+    - div 태그는 block display
+    - span 태그는 inline display
