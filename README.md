@@ -139,3 +139,5 @@ These are what I learned, not for teaching
 - 구역을 구분하는 태그 : <div>, <span>
     - div 태그는 block display
     - span 태그는 inline display
+- Box model
+ ![box model](box_model/images/box-model-intro.png)
