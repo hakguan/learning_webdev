@@ -6,24 +6,41 @@
         <meta charset="utf-8">
         <style>
             h1 {
-                border: 1px solid red;
+                border: 5px solid red;
                 width: 500px;
                 height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                /*
+                요소들은 기본적으로 왼쪽 정렬이며, margin 값을 auto로 두면 가운데 정렬을 할 수 있음
+                margin: 0 auto; 
+                할 경우 top/bottom margin은 0, left/right는 auto로 설정됨
+                */
             }
 
             .p1 {
-                border: 1px solid red;
+                border: 5px solid red;
                 margin-top: 100px;
                 margin-bottom: 100px;
                 margin-left: 50px;
+                margin-right: 50px;
+                /*padding과 동일한 방식으로 지정 가능*/
             }
 
             .p2 {
-                border: 1px solid red;
+                border: 5px solid red;
                 padding-top: 50px;
-                padding-bottom: 50px;
-                padding-left: 50px;
-                padding-right: 50px;
+                padding-bottom: 40px;
+                padding-left: 30px;
+                padding-right: 20px;
+                /* top - right - bottom - left
+                padding: 50px 20px 40px 30px;
+                모두 같은 경우
+                padding: 50px;
+                top/borrom, left/right
+                padding: 50px 30px;
+                */
+                
             }
         </style>
     </head>

@@ -141,3 +141,7 @@ These are what I learned, not for teaching
     - span 태그는 inline display
 - Box model
  ![box model](box_model/images/box-model-intro.png)
+    - contents
+    - padding
+    - border
+    - margin
