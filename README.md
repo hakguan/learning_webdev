@@ -136,7 +136,7 @@ These are what I learned, not for teaching
             font-family: "Hanna";
         }
         ```
-- 구역을 구분하는 태그 : <div>, <span>
+- 구역을 구분하는 태그 : \<div>, \<span>
     - div 태그는 block display
     - span 태그는 inline display
 - Box model
@@ -144,4 +144,82 @@ These are what I learned, not for teaching
     - contents
     - padding
     - border
+      - soild, dotted, dashed 등
+      - input 태그 등의 경우 기본적으로 태두리가 설정되어 있으나, 없애고 싶을 때는 두 가지 방법이 있음
+        1. border: none;
+        2. border: 0;
+    ```Html
+    <style>
+        h2 {
+            border: 3px dashed green;
+            /*가장 일반적*/
+        }
+        .p1 {
+            border-style: solid;
+            border-color: #4d9fff;
+            border-width: 5px;
+        }
+        h1 {
+            border-top: 3px dotted #4d9fff;
+            /*각 면을 다르게 정의하고 싶을 때*/
+        }
+        p {
+            border-radius: 10px; /*둥근 모서리*/
+            /*border-top-left-radius, top-right, bottom-left, bottom-right로 각각 설정가능*/
+            box-shadow: 10px 10px 50px 10px red/*가로위치, 세로위치, 흐림정도 크기 색*/
+            /*none; 기본값*/
+        }
+    </style>
+    ```
     - margin
+    - width, height
+      - 최대(max), 최소(min) 값도 설정할 수 있음
+      - max 설정으로 넘친 내용의 경우 overflow로 처리할 수 있음
+      - overflow: visible(기본값), hidden, scroll, auto
+    - box 꾸미기
+      - background color
+        ```Html
+        <style>
+        p {
+            background-color: rgb(232, 95, 20); /*박스 배경색*/
+            /*transparent; 는 배경색을 투명하게 해줌(기본값)*/       
+        }
+        body {
+            background-color: gray; /*페이지 배경색*/
+        }
+        </style>
+        ```
+      - box-shadow
+        ```Html
+        <style>
+        /*기본값: none;*/
+        /*위치 설정*/
+        p {
+            box-shadow: 50px 40px; /*가로위치 세로위치*/
+            /*그림자 색 추기(기본값 black)*/
+            box-shadow: 50px 40px #4d9ff;
+            /*흐림정도(blur, 기본값 0px)*/
+            box-shadow: 50px 40px 10px #4d9ff; /*가로 세로 blur 색*/
+            /*그림자 크기(spread)*/
+            box-shadow: 50px 40px 10px 20px #4d9ff; /*가로 세로 blur spread 색*/
+        }
+        </style>
+        ```
+      - box-sizing
+        - padding, border를 포함해서 width, height에 맞추고 싶을 때 사용
+        ```Html
+        <style>
+        h1 {
+            width: 300px;
+            height: 200px;
+            padding: 35px;
+            border: 5px solid red;
+            box-sizing: border-box; /*기본값: content-box*/
+            /*
+            box-sizing을 사용하지 않을 경우 총 box의 크기는 
+            너비 = width + padding * 2 + border * 2
+            높이 = height + padding * 2 + border * 2
+            */
+        }
+        </style>
+        ```
