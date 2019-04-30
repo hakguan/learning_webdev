@@ -177,7 +177,7 @@ These are what I learned, not for teaching
       - max 설정으로 넘친 내용의 경우 overflow로 처리할 수 있음
       - overflow: visible(기본값), hidden, scroll, auto
     - box 꾸미기
-      - background color
+      - background color / image
         ```Html
         <style>
         p {
@@ -186,6 +186,32 @@ These are what I learned, not for teaching
         }
         body {
             background-color: gray; /*페이지 배경색*/
+        }
+        div {
+            background-image: url("../images/beach.jpg")
+            background-repeat: no-repeat;
+            /*
+            no-repeat: 반복하지 않음
+            repeat-x: 가로 반복
+            repeat-y: 세로 반복
+            repeat: 가로 및 세로 반복
+            space: 반복할 수 있는 만큼 반복한 뒤, 남는 공간은 이미 간 여백으로 배분
+            round: 반복할 수 있는 만큼 반복한 뒤, 남는 공간은 이미지 확대를 통해 배분
+            */
+            background-size: cover; 
+            /*
+            px, %로 값 지정(%의 경우 부모 요소의 width, height에 맞춰 출력)
+            auto: 원래 이미지 사이즈대로 출력
+            cover: 화면을 꽉 채우면서 사진 비율 유지(box 크기에 따라 잘릴 수 있음)
+            contain: 가로 및 세로 중 먼저 채워지는 쪽에 맞춰 출력
+            */
+            background-position: center center;
+            /*
+            배경 이미지의 위치를 정해주는 속성으로 배경의 위치 및 배경이 잘리는 경우 기준 점을 설정해주는 효과
+            1. left/right/center top/bottom/center 로 지정
+            2. %로 지정(left, top을 기준으로)
+            3. px로 지정(left, top을 기준으로)
+            */
         }
         </style>
         ```
