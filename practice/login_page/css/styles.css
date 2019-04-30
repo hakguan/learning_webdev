@@ -36,6 +36,11 @@ body {
     text-align: center;
 }
 
+/* 마우스오버(hover) 효과 추가 */
+.submit-btn:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50)
+}
+
 .links {
     text-align: center;
 }
