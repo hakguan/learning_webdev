@@ -250,7 +250,7 @@ These are what I learned, not for teaching
         </style>
         ```
 - ***CSS 선택자 정리***
-    - [관련문서](#)
+    - [관련문서](https://github.com/hakguan/learning_webdev/tree/master/css_selector)
     - 태그 이름
     - 클래스/아이디
     - 자식(children)
