@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector</title>
+    <link href="css_selector.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- 태그 이름 -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+<!-- 클래스/아이디 -->
+    <p class="important">Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p class="important">Paragraph 3</p>
+    <p class="important">Paragraph 4</p>
+    <p id="favorite">Paragraph 5</p>
+    <p>Paragraph 6</p>
+
+<!-- 자식(children) -->
+    <i>Outside</i>
+    <div class="div1">
+        <i>Inside 1</i>
+        <p>Bla bla <i>Inside 2</i></p>
+        <i>Inside 3</i>
+    </div>
+
+<!-- 직속 자식(direct children) -->
+    <i>Outside</i>
+    <div class="div2">
+        <i>Inside 1</i>
+        <p>Bla bla <i>Inside 2</i></p>
+        <i>Inside 3</i>
+    </div>
+
+<!-- 복수 선택 -->
+    <p class="one">Outside 1</p>
+    <p class="two">Outside 2</p>
+    <div>
+        <p class="one">Inside 1</p>
+        <p class="two">Inside 2</p>
+        <p class="three">Inside 3</p>
+        <p class="four">Inside 4</p>
+        <p class="five">Inside 5</p>
+    </div>
+
+<!-- 여러 조건 -->
+    <p class="outside one">Outside 1</p>
+    <p class="outside two">Outside 2</p>
+    <div>
+        <p class="inside one">Inside 1</p>
+        <p class="inside two">Inside 2</p>
+        <p class="inside three">Inside 3</p>
+        <p class="inside four">Inside 4</p>
+        <p class="inside five">Inside 5</p>
+    </div>
+
+<!-- Pseudo-class (가상 클래스) -->
+    <!-- n번째 자식 -->
+        <div class="div3">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+        </div>
+    <!-- 마우스 오버(hover) -->
+        <h3>Hello World!</h3>

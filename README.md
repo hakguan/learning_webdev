@@ -249,3 +249,13 @@ These are what I learned, not for teaching
         }
         </style>
         ```
+- ***CSS 선택자 정리***
+    - [관련문서](#)
+    - 태그 이름
+    - 클래스/아이디
+    - 자식(children)
+    - 직속 자식(direct children)
+    - 복수 선택
+    - 여러 조건
+    - Pseudo-class(가상 클래스)
+    - 마우스 오버(hover)
