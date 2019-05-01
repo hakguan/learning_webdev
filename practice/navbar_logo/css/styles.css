@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#navbar {
+    padding: 0 20px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 50);
+    height: 60px;
+}
+
+#logo {
+    font-family: serif;
+    float: left;
+    /* img의 vertical-align을 위해 line-height 설정 */
+    line-height: 60px;
+}
+
+#logo img {
+    /* #logo의 box에 맞춰 vertical-align 될 수 있도록 설정 */
+    /* img가 아니라 text일 경우, line-height이 상속되지 않도록 normal로 설정 해줘야 함 */
+    vertical-align: middle;
+}
+
+.hero-header {
+    background-image: url("../images/hero_image.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 670px;
+    text-align: center;
+    /* .info의 요소들을 vertical-align 하기 위해 line-height 설정 */
+    line-height: 670px;
+}
+
+/* .info의 요소들을 inline-block으로 설정해주고 line-height가 상속되지 않는 상태에서 vertical-align이 이루어질 수 있도록 설정 */
+.hero-header .info {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.hero-header .info h1 {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 13px;
+    color: white;
+    font-weight: 400;
+}
+
+.hero-header .info h2 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 60px;
+    color: white;
+    font-weight: 400;
+}
+
+.hero-header .info a {
+    font-size: 14px;
+    background-color: white;
+    color: #464273;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+}
