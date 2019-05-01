@@ -140,7 +140,7 @@ These are what I learned, not for teaching
     - div 태그는 block display
     - span 태그는 inline display
 - Box model
-![box model](box_model/images/box-model-intro.png)
+![box model](/box_model/images/box-model-intro.png)
     - contents
     - padding
     - border
