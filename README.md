@@ -294,6 +294,9 @@ These are what I learned, not for teaching
     /* 112점 */
     }
     ```
+- CSS의 단위
+    - px, em, rem
+    - [참고 사이트](https://webdesign.tutsplus.com/ko/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984)
 - display 속성
     - inline, block, inline-block, list-item, table, flex, none, ...
     - 각 HTML 요소는 이 중 하나의 속성을 가지고 있음
@@ -323,3 +326,19 @@ These are what I learned, not for teaching
     4. flex
     5. list-item
     6. none
+- Baseline
+    - inline으로 정렬된 항목의 경우 baseline에 맞춰 정렬됨
+    - text의 경우 box가 아닌 text를 기준으로 baseline이 설정됨
+    - image의 경우 image의 최하단이 baseline으로 설정됨
+    - inline-block의 경우 inline-block에 포함된 요소 중 가장 아래 요소의 baseline이 inline-block의 baseline으로 설정됨
+      - inline-block에 요소가 없는 경우 box를 기준으로 baseline에 설정됨
+      - box의 크기보다 contents의 크기가 클 경우 overflow 속성에 따라 baseline이 바뀜(visible인 경우 일반적인 경우와 동일하고, scroll인 경우 box를 기준으로 설정됨)
+- Vertical-align
+    - vertical-algin 속성은 inline 또는 inline-block 요소에 적용됨
+    - vertical-align의 기본값은 baseline으로 설정되어 있음
+      - 기준이 되는 baseline은 부모 속성의 baseline임
+    - vertical-align: top;을 할 경우, 같은 line에 있는 요소들 중 가장 높이 있는 요소에 맞춰지면서 baseline이 바뀔 수 있음
+      - baseline은 vertical-align의 조건들을 충족시키면서 줄의 높이를 최소화시키는 곳에 위치함
+    - vertical-align: middle;을 할 경우, 부모 태그의 가운데와 맞춰짐
+    - *세로 가운데 정렬*
+    - [참고 사이트](https://www.w3schools.com/css/css3_flexbox.asp)
