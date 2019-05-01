@@ -139,7 +139,7 @@ These are what I learned, not for teaching
 - 구역을 구분하는 태그 : \<div>, \<span>
     - div 태그는 block display
     - span 태그는 inline display
-- Box model
+- Box model  
 ![box model](https://github.com/hakguan/learning_webdev/blob/master/box_model/images/box-model-intro.PNG?raw=true)
     - contents
     - padding
