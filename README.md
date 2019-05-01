@@ -259,3 +259,67 @@ These are what I learned, not for teaching
     - 여러 조건
     - Pseudo-class(가상 클래스)
     - 마우스 오버(hover)
+- CSS 상속
+    - 상속되는 속성들
+      1. color
+      2. font-familiy / size / weight
+      3. line-height
+      4. list-style
+      5. text-align
+      6. visivility
+    - 위의 속성들을 대부분의 경우 상속되지만 예외적인 경우도 존재함
+        - \<a> 태그의 경우 color 속성이 상속되지 않음
+    ```Css
+    .div2 {
+        color: green;
+    }
+    .div2 a {
+        color: inherit;
+    /* color 속성을 inherit으로 지정하면 강제로 부모 속성값을 상속받을 수 있음 */
+    }
+- CSS 우선순위
+    - 같은 요소를 가리키지만 선택자가 다른 경우 명시도(Speciticity) 점수에 따라 우선순위가 결정됨
+      1. Inline Styles
+      2. IDs
+      3. Classes, attributes, pseudo-classes
+      4. Elements, pseudo-elements
+    - 각 요소의 개수를 순서대로 1000, 100, 10, 1 자리로 반환하여 명시도 점수를 계산할 수 있음
+    ```Css
+    ul li:first-child #link {
+       color: green;
+    }
+    /* 13점 */
+    ul li:first-child a {
+        color: orange;
+    /* 112점 */
+    }
+    ```
+- display 속성
+    - inline, block, inline-block, list-item, table, flex, none, ...
+    - 각 HTML 요소는 이 중 하나의 속성을 가지고 있음
+    - 대표적으로 inline(\<span>, \<b>, \<img> 등), block(\<div>, \<h1>, \<p> 등)이 있음
+    -  본래 가지고 있는 속성을 바꿔줄 수 있음
+    ```Css
+    i {
+        display: block;
+    }
+    /*<i> 태그는 inline 속성이나 block 속성을 지정해 줄 수 있음*/
+    div {
+        display: inline;
+    }
+    /*<div> 태그는 block 속성이나 inline 속성을 지정해 줄 수 있음*/
+    ```
+    1. inline
+       - 다른 요소들과 같은 줄에 머무르려고 하는 성향과, 필요한 만큼의 가로길이만 차지하는 성향이 있음
+       - span, a, b, i, img, button 등의 요소는 기본 display 값이 inline임
+       - \<img>는 대체요소(replaced element)라고 불리는 inline요소로, 가로 및 세로 길이를 지정할 수 있는 inline 요소임
+         - image와 text가 한 줄에 있을 경우 vertical-align을 사용(top, middle, bottom)하면 그림의 위, 중간, 아래를 기준으로 정렬됨
+    2. block
+       - 다른 요소들과 독단적인 줄에 가려고 하는 성향과, 최대한 많은 가로 길이를 차지하는 성향이 있음
+       - div, h1, h2..., p, nav, ul, li 등의 요소는 기본 display 값이 block임
+    3. inline-block
+       - inline 요소는 가로와 세로 길이가 auto로 내용에 따라 달라져 width, height를 설정할 수 없음
+       - inline-block으로 display를 설정하면 inline의 성향을 유지하면서 width와 height를 설정할 수 있음
+    4. flex
+    5. list-item
+    6. none
