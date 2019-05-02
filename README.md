@@ -139,8 +139,8 @@ These are what I learned, not for teaching
 - 구역을 구분하는 태그 : \<div>, \<span>
     - div 태그는 block display
     - span 태그는 inline display
-- Box model
-![box model](/box_model/images/box-model-intro.png)
+- Box model  
+![box model](https://github.com/hakguan/learning_webdev/blob/master/box_model/images/box-model-intro.PNG?raw=true)
     - contents
     - padding
     - border
@@ -342,6 +342,7 @@ These are what I learned, not for teaching
     - vertical-align: middle;을 할 경우, 부모 태그의 가운데와 맞춰짐
     - *세로 가운데 정렬*
     - [참고 사이트](https://www.w3schools.com/css/css3_flexbox.asp)
+<<<<<<< HEAD
 - Position
     - relative
       - static: 기본값, 각 요소가 원래 있어야 할 위치에 존재하는 것
@@ -365,3 +366,5 @@ These are what I learned, not for teaching
     ```
         - relative는 요소가 이동하고, 원래 위치한 공간이 비워져 있지만, fixed는 해당 공간을 다른 요소들이 채워 원래 해당 요소가 차지하던 공간은 없어짐
       - absolute: 조상(ancester) 중 position이 지정된 항목을 기준, 없을 경우 브라우저를 기준으로 함
+=======
+>>>>>>> 778a703243db868a8f99580c99e6515fab4227fb
