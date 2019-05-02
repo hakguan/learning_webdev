@@ -342,3 +342,26 @@ These are what I learned, not for teaching
     - vertical-align: middle;을 할 경우, 부모 태그의 가운데와 맞춰짐
     - *세로 가운데 정렬*
     - [참고 사이트](https://www.w3schools.com/css/css3_flexbox.asp)
+- Position
+    - relative
+      - static: 기본값, 각 요소가 원래 있어야 할 위치에 존재하는 것
+      - relative: 지정한 값 만큼 이동해서 위치, 다른 요소들과 관계없이 해당 요소만 이동
+    ```Css
+    span {
+        position: relative;
+        top: 10px;
+        left: 30px;
+        /*원래의 위치에서 위에서 10px 아래, 왼쪽에서 30px 오른쪽으로 이동*/
+    }
+    ```
+      - fixed: 브라우저를 기준으로 위치, 스크롤이 움직여도 해당 위치에 고정되어 있음
+    ```Css
+    span {
+        position: fixed;
+        top: 10px;
+        left: 30px;
+        /*브라우저를 기준으로 고정된 위치(스크롤 해도 위치 고정)*/
+    }
+    ```
+        - relative는 요소가 이동하고, 원래 위치한 공간이 비워져 있지만, fixed는 해당 공간을 다른 요소들이 채워 원래 해당 요소가 차지하던 공간은 없어짐
+      - absolute: 조상(ancester) 중 position이 지정된 항목을 기준, 없을 경우 브라우저를 기준으로 함
