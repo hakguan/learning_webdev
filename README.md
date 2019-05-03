@@ -376,3 +376,34 @@ These are what I learned, not for teaching
       - float을 사용해 grid를 구성하면 전체 grid의 세로 길이는 0이 됨(float의 개념에 따라)
       - 따라서 p 태그 등을 사용해 글을 쓰게 되면 grid 오른족에 제시됨
       - 그럴 땐, div를 하나 추가하여 grid의 세로를 강제로 늘려줘서 border 등을 설정할 수 있음
+  - List 
+      - Ordered List
+        - \<ol type=1(기본값), a, A, i, I>로 속성을 정해줘서 리스트 서식을 정해줄 수 있음
+        ```Html
+        <ol type="A">
+            <li>집 청소</li> 
+            <!--li: List Item-->
+            <li>영어 단어 외우기</li>
+            <li>영화 보기</li>
+        </ol>
+        ```
+      - Unordered List
+        ```Html
+        <ul>
+            <li>집 청소</li> 
+            <li>영어 단어 외우기</li>
+            <li>영화 보기</li>
+        </ul>
+        ```
+      - list styling
+        - list-style-type 속성 사용 가능(square 등)
+        - list-style: none; 
+        - unordered list를 단순한 상태로 바꾸기
+        ```Css
+        ul {
+            padding-left: 0;
+        }
+        li {
+            list-style: none;
+        }
+        ```
