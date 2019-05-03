@@ -370,3 +370,9 @@ These are what I learned, not for teaching
       - float을 사용하면 display 속성은 block으로 변경됨
     - float을 사용하면 inline, inline-block 요소는 float된 요소가 차지하는 공간을 침범할 수 없음
     - 뉴스 등의 레이아웃에 사용할 수 있음
+    - Multiple floats를 사용해 grid layout을 만들 수 있음
+    - **clear**: left; 또는 right를 쓸 경우 해당 그리드의 왼쪽 혹은 오른족에 다른 그리드가 존재하지 않게 해줌으로써 그리드간 줄바꿈을 가능하게 해줌
+    - **그리드와 글 사용**
+      - float을 사용해 grid를 구성하면 전체 grid의 세로 길이는 0이 됨(float의 개념에 따라)
+      - 따라서 p 태그 등을 사용해 글을 쓰게 되면 grid 오른족에 제시됨
+      - 그럴 땐, div를 하나 추가하여 grid의 세로를 강제로 늘려줘서 border 등을 설정할 수 있음
