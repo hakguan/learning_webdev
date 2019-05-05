@@ -7,11 +7,11 @@
     font-family: "BMJUA";
     box-sizing: border-box;
     text-align: center;
-    margin: auto;
 }
 
 body {
     background-color: #F0EBD9;
+    margin: 0;
 }
 
 #header {
@@ -29,31 +29,25 @@ body {
     font-size: 32px;
 }
 
-/* 각 menu 요소를 column class를 추가해서 요소들이 항상 컬럼이 두개인 그리드로 나타나도록 함 */
 .column {
-    width: 45%; /* 50%로 하면 whitespace 때문에 줄이 넘어가기 때문에 적당한 %로 지정 */
-    display: inline-block;
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* column의 짝수, 홀수에 따라 menu 요소의 float, margin을 다르게 설정해서 정렬함 */
-.column:nth-child(2n+1) .menu {
+.clearfix {
+    clear: left;
+}
+
+.menu {
     width: 300px;
     border-radius: 10px;
     overflow: hidden;
+    margin-right: 15px;
+    margin-left: 15px;
     margin-bottom: 50px;
     background-color: white;
     float: left;
-    margin-left: 15px;
-}
-
-.column:nth-child(2n) .menu {
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 50px;
-    background-color: white;
-    float: right;
-    margin-right: 15px;
 }
 
 .menu img {
