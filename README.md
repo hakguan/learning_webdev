@@ -188,7 +188,7 @@ These are what I learned, not for teaching
             background-color: gray; /*페이지 배경색*/
         }
         div {
-            background-image: url("../images/beach.jpg")
+            background-image: url("../images/beach.jpg");
             background-repeat: no-repeat;
             /*
             no-repeat: 반복하지 않음
@@ -407,3 +407,23 @@ These are what I learned, not for teaching
             list-style: none;
         }
         ```
+
+- 반응형 웹 디자인 (Responsible Web Design)
+    - 브라우저의 사이즈에 따라 다른 설정을 할 수 있음
+    ```Css
+    h2 {
+        font-size: 24px;
+    }
+    /* media query : 지정한 값 이상의 크기의 브라우저에서 해당 설정으로 보여줌 */
+    @media (min-width: 768px) {
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        h2 {
+            font-size: 48px;
+        }
+    }
+    ```
