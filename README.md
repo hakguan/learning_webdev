@@ -17,6 +17,11 @@ These are what I learned, not for teaching
 - [JSFiddle](https://jsfiddle.net)
   - HTML, CSS, JS를 테스트해볼 수 있는 기능 제공
   - Stack overflow에 질문할 때 코드를 JSFiddle에서 작성하고 저장한 후에 링크를 공유하면 보다 쉽게 질문을 이해시킬 수 있음 
+- CSS 공부사이트
+  - [:nth tester](https://css-tricks.com/examples/nth-child-tester/#)
+  - [centering in css](https://css-tricks.com/centering-css-complete-guide/)
+  - [css 레이아웃 배워보기](http://ko.learnlayout.com/)
+  - [css를 배우는 방법](https://webactually.com/2019/02/css%EB%A5%BC-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%B0%A9%EB%B2%95/)
 ## 2. HTML / CSS
 - Optional Tags를 꼭 사용해야 하는가?
   - 정리(organization)의 목적으로 사용할 수 있으나의견은 분분함
